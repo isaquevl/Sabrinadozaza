@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY LOVE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <div class="header">
+            <div class="Logo">My love</div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <label class="theme-switch" for="theme-toggle">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="main-images">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="footer">
+            © 2023 My Portfolio
+        </div>
+    </div>
+<script src="script.js"></script>
+
+    <script>
+        document.getElementById("theme-toggle").addEventListener('change', function() {
+            document.body.className = this.checked ? 'dark-mode' : 'light-mode';
+        });
+    </script>
+</body>
+</html>
